@@ -12,19 +12,19 @@
         height: 10rem;
         border-radius: 20rem;
         animation-name: circleAnim;
-        animation-duration: 5s;
-        animation-delay: 1s;
-        Transition-timing-function: ease-out;
+        animation-duration: 5s; /*transition 5sec for a one cycle*/
+        animation-delay: 1s; /*start transition after 1sec*/
+        Transition-timing-function: ease-out; /*transition beg fast and slow at end*/
     }
     @keyframes circleAnim {
         0%{
-            transform: translateX(0px);
+            transform: translateX(0px); /*from 0px*/
         }
         50%{
-            transform: translateX(1000px);
+            transform: translateX(1000px);/*to 1000px*/
         }
         100%{
-            transform: translateX(0px);
+            transform: translateX(0px);/*back to 0px*/
         }
     }
 </style>
